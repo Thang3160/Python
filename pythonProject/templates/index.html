@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<div class="top-banner">
+    <img src="" alt="" class="img-banner">
+</div>
+<div class="container">
+    <div class="banner">
+        <div class="row">
+            <div class="col-md-3 left-banner">
+                <div class="search">
+                    <div class="text-center">
+                        Tìm kiếm
+                    </div>
+                    <div class="input-group rounded">
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                            aria-describedby="search-addon" />
+                        <span class="input-group-text border-0" id="search-addon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="text-center">
+                        Tiêu đề sự kiện
+                    </div>
+                    <div class="Event">Event</div>
+                </div>
+            </div>
+            <div class="col-md-9 right-banner">
+                <div class="d-inline-block position-relative top-50 start-50">
+                    Giới thiệu nội dung
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-banner">
+        <div class="info-genealogy">
+            <img src="" alt="" class="avatar">
+            <div class="infomation">
+
+            </div>
+            <a href="#" class="btn btn-primary">Xem chi tiết</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
