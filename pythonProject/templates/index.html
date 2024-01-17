@@ -5,13 +5,23 @@
 {% endblock %}
 
 {% block body %}
+
+<!-- Top Banner -->
 <div class="top-banner">
     <img src="" alt="" class="img-banner">
 </div>
+<!-- Top Banner -->
+
 <div class="container">
+
+    <!-- Banner -->
     <div class="banner">
         <div class="row">
+
+            <!-- Left Banner -->
             <div class="col-md-3 left-banner">
+
+                <!-- Search -->
                 <div class="search">
                     <div class="text-center">
                         Tìm kiếm
@@ -24,28 +34,82 @@
                         </span>
                     </div>
                 </div>
+                <!-- Search -->
+
+                <!-- Event -->
                 <div class="event">
                     <div class="text-center">
                         Tiêu đề sự kiện
                     </div>
                     <div class="Event">Event</div>
                 </div>
+                <!-- Event -->
+
             </div>
+            <!-- Left Banner -->
+
+            <!-- Right Banner -->
             <div class="col-md-9 right-banner">
                 <div class="d-inline-block position-relative top-50 start-50">
                     Giới thiệu nội dung
                 </div>
             </div>
+            <!-- Right banner -->
+
         </div>
     </div>
+    <!-- Banner -->
+    
+    <!-- Bottom Banner -->
     <div class="bottom-banner">
-        <div class="info-genealogy">
-            <img src="" alt="" class="avatar">
-            <div class="infomation">
-
+        <!-- Infomation Genealogy -->
+        <div class="info-genealogy d-flex mb-3 align-items-center">
+            <img src="data:image/png;base64,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" alt="" class="avatar">
+            <div class="infomation p-2 flex-fill">
+                <div class="fs-4 fw-bold">Dòng họ ...</div>
+                <div class="">Họ Nguyễn văn A, Xã ..., TP .....</div>
+                <div class="">Thành viên ....</div>
             </div>
             <a href="#" class="btn btn-primary">Xem chi tiết</a>
         </div>
+        <!-- Infomation Genealogy -->
+
+        <!-- Infomation Genealogy -->
+        <div class="info-genealogy d-flex mb-3 align-items-center">
+            <img src="data:image/png;base64,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" alt="" class="avatar">
+            <div class="infomation p-2 flex-fill">
+                <div class="fs-4 fw-bold">Dòng họ ...</div>
+                <div class="">Họ Nguyễn văn A, Xã ..., TP .....</div>
+                <div class="">Thành viên ....</div>
+            </div>
+            <a href="#" class="btn btn-primary">Xem chi tiết</a>
+        </div>
+        <!-- Infomation Genealogy -->
+
+        <!-- Infomation Genealogy -->
+        <div class="info-genealogy d-flex mb-3 align-items-center">
+            <img src="data:image/png;base64,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" alt="" class="avatar">
+            <div class="infomation p-2 flex-fill">
+                <div class="fs-4 fw-bold">Dòng họ ...</div>
+                <div class="">Họ Nguyễn văn A, Xã ..., TP .....</div>
+                <div class="">Thành viên ....</div>
+            </div>
+            <a href="#" class="btn btn-primary">Xem chi tiết</a>
+        </div>
+        <!-- Infomation Genealogy -->
+
+        <!-- Infomation Genealogy -->
+        <div class="info-genealogy d-flex mb-3 align-items-center">
+            <img src="data:image/png;base64,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" alt="" class="avatar">
+            <div class="infomation p-2 flex-fill">
+                <div class="fs-4 fw-bold">Dòng họ ...</div>
+                <div class="">Họ Nguyễn văn A, Xã ..., TP .....</div>
+                <div class="">Thành viên ....</div>
+            </div>
+            <a href="#" class="btn btn-primary">Xem chi tiết</a>
+        </div>
+        <!-- Infomation Genealogy -->
     </div>
+    <!-- Bottom Banner -->
 </div>
 {% endblock %}
